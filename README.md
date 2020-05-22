@@ -22,7 +22,9 @@
 3. 运行项目，其中 `{ratifyNo}` 替换成你所需要的项目 **批准号**
 
     ```shell script
-    python3 nsfc_downloader.py --ratify '31270544'
+    python3 nsfc_downloader.py --ratify 31270544
+    or 
+    python nsfc_downloader.py --ratify 31270544
     ```
     
     你也可以在其他项目中使用如下示例代码进行批量下载
@@ -32,7 +34,7 @@
     
     downloader = NsfcDownloader(tmp_path, out_path)
     
-    for ratify in ['23456','2345','U12345','2345678']:
+    for ratify in [23456,2345,U12345,2345678]:
         downloader.download(ratify)
     ```
     
